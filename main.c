@@ -14,7 +14,7 @@ void timers_init() {
 	IFS0bits.T2IF = 0;
 }
 
-int move_forward = 0;
+int move_forward = 1;
 
 int main(void) {
 	INTCON2bits.GIE = 1;
@@ -26,7 +26,7 @@ int main(void) {
 	button_init();
 	timers_init();
 
-	move(FORWARD);
+	move(RIGHT);
 
 	while (1)
 		;

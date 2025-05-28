@@ -47,6 +47,14 @@ void move(enum Direction direction) {
 			OC3R = 0;
 			OC4R = comp_duty(50);
 			break;
+
+		case RIGHT:
+			OC1R = 0;
+			OC2R = comp_duty(100);
+			OC3R = 0;
+			OC4R = comp_duty(50);
+			break;
+
 		case STOP:
 			OC1R = 0;
 			OC2R = 0;
