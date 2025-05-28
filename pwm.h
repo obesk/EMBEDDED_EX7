@@ -12,6 +12,7 @@ enum Direction {
 void pwm_init(void);
 int comp_duty(int percentage);
 void pwm_start(void);
+void pwm_stop(void);
 void move(enum Direction direction);
 
 #endif
